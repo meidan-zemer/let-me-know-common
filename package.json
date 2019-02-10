@@ -2,9 +2,11 @@
   "name": "let-me-know-common",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\" \"src/**/*.tsx\" \"tests/**/*.ts\" \"tests/**/*.js\" \"tests/**/*.tsx\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/meidan-zemer/let-me-know-common/issues"
   },
-  "homepage": "https://github.com/meidan-zemer/let-me-know-common#readme"
+  "homepage": "https://github.com/meidan-zemer/let-me-know-common#readme",
+  "devDependencies": {
+    "prettier": "^1.16.4",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
 }
