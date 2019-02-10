@@ -31,7 +31,7 @@ export function getTimeDate(ts: number): string {
     if (moment.duration(now.diff(momentTs)) < moment.duration(60 * 60 * 24 * 1000)) {
         return momentTs.fromNow();
     }
-    return momentTs.format('MMMM Do YYYY');
+    return momentTs.format('MMMM Do YYYY H:m');
 }
 
 export const contactPointsCollectionName: string = 'contactPoints';
