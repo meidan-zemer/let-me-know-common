@@ -18,6 +18,7 @@ export declare type discussionType = Readonly<{
     createdDate: number;
     modifiedDate: number;
     title: string;
+    numberOfMessages: number;
 }>;
 export declare function getTimeDate(ts: number): string;
 export declare const contactPointsCollectionName: string;
