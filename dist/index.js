@@ -5,7 +5,7 @@ export function getTimeDate(ts) {
     if (moment.duration(now.diff(momentTs)) < moment.duration(60 * 60 * 24 * 1000)) {
         return momentTs.fromNow();
     }
-    return momentTs.format('MMMM Do YYYY');
+    return momentTs.format('MMMM Do YYYY H:m');
 }
 export const contactPointsCollectionName = 'contactPoints';
 export const discussionsSubCollectionName = 'contactPointDiscussions';
