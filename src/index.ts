@@ -22,6 +22,7 @@ export type discussionType = Readonly<{
     createdDate: number;
     modifiedDate: number;
     title: string;
+    numberOfMessages:number;
 }>;
 
 
