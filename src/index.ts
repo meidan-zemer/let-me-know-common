@@ -23,8 +23,17 @@ export type discussionType = Readonly<{
     modifiedDate: number;
     title: string;
     numberOfMessages:number;
+    users?:[string]
 }>;
 
+export type user = Readonly<{
+    id:string;
+}>;
+
+export type userDiscussion = Readonly<{
+    discussionId:string;
+    unreadMessages:number;
+}>;
 
 export function getTimeDate(ts: number): string {
     const now = moment();
@@ -35,6 +44,9 @@ export function getTimeDate(ts: number): string {
     return momentTs.format('MMMM Do YYYY H:m');
 }
 
+
 export const contactPointsCollectionName: string = 'contactPoints';
 export const discussionsSubCollectionName: string = 'contactPointDiscussions';
 export const messagesSubCollectionName: string = 'contactPointDiscussionMessages';
+export const usersCollectionName:string ='users';
+export const userDiscussionsCollectionName:string ='userDiscussions';

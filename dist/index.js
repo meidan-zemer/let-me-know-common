@@ -16,3 +16,5 @@ exports.getTimeDate = getTimeDate;
 exports.contactPointsCollectionName = 'contactPoints';
 exports.discussionsSubCollectionName = 'contactPointDiscussions';
 exports.messagesSubCollectionName = 'contactPointDiscussionMessages';
+exports.usersCollectionName = 'users';
+exports.userDiscussionsCollectionName = 'userDiscussions';
