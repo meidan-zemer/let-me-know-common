@@ -25,7 +25,6 @@ export declare type userType = Readonly<{
     id: string;
     lastLogin: number;
     createdDate: number;
-    loginType: "google" | "email";
 }>;
 export declare type userDiscussion = Readonly<{
     discussionId: string;
