@@ -26,8 +26,11 @@ export type discussionType = Readonly<{
     users?:[string]
 }>;
 
-export type user = Readonly<{
+export type userType = Readonly<{
     id:string;
+    lastLogin:number;
+    createdDate:number;
+    loginType:"google" | "email"
 }>;
 
 export type userDiscussion = Readonly<{
