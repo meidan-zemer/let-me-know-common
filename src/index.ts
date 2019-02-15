@@ -30,7 +30,6 @@ export type userType = Readonly<{
     id:string;
     lastLogin:number;
     createdDate:number;
-    loginType:"google" | "email"
 }>;
 
 export type userDiscussion = Readonly<{
