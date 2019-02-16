@@ -23,8 +23,6 @@ export declare type discussionType = Readonly<{
 }>;
 export declare type userType = Readonly<{
     id: string;
-    lastLogin: number;
-    createdDate: number;
 }>;
 export declare type userDiscussion = Readonly<{
     discussionId: string;
