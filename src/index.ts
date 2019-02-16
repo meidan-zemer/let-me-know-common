@@ -28,8 +28,6 @@ export type discussionType = Readonly<{
 
 export type userType = Readonly<{
     id:string;
-    lastLogin:number;
-    createdDate:number;
 }>;
 
 export type userDiscussion = Readonly<{
